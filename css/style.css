@@ -1,0 +1,400 @@
+@charset "utf-8";
+/*
+ * Copyright (c) All Rights Reserved, VERGOSOFT LLC
+ * Title: HypnoRem Website
+ * Author: Scott Zastrow
+ *
+*/
+body
+{
+background-color: #000000;
+color: #fff;
+font-family: arial, verdana, helvetica;
+}
+body a:link
+{
+color: #fff;
+}
+@font-face
+{
+font-family: hrfont;
+src: url('../fonts/hrfont.eot');
+src: url('../fonts/hrfont.eot?#iefix') format('embedded-opentype'),
+url('../fonts/hrfont.woff') format('woff'),
+url('../fonts/hrfont.otf') format('otf'),
+url('../fonts/hrfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+font-size: normal;
+color: #F8F8FF;
+}
+.menu-wrap
+{
+overflow: hidden;
+}
+#form
+{
+width: 250px;
+height: auto;
+margin: 20px auto 20px auto;
+font-weight: bold;
+}
+.title, .demotitle /*Unity WebGL Style.css has conflict w/ .title class*/
+{
+margin: 30px auto 0px auto;
+width: 750px;
+padding: 15px;
+font-family: hrfont, arial, verdana, helvetica;
+font-size: 25px;
+color:#ccccff;
+border-radius:10px;
+background:#202020;
+}
+.demo
+{
+float: clear;
+margin: 20px auto 30px auto;
+width: 320px;
+height: 480px;
+padding: 15px;
+font-size: normal;
+line-height: 140%;
+border-radius:10px;
+background:#202020;
+color:#D8D8D8;
+}
+.content
+{
+margin: 20px auto 50px auto;
+width: 750px;
+padding: 15px;
+font-size: normal;
+line-height: 140%;
+border-radius:10px;
+background:#202020;
+color:#D8D8D8;
+}
+.content a:link
+{
+color:#ccccff;
+text-decoration: none;
+}
+.content a:visited
+{
+color:#ccccff;
+text-decoration: none;
+}
+.content a:hover
+{
+text-decoration: underline;
+color:#ccccff;
+}
+.content a:active
+{
+color:#ccccff;
+text-decoration: none;
+}
+.top
+{
+float:right;
+font-size: 20px;
+width: auto;
+color:#D8D8D8;
+}
+.top a:link
+{
+color:#D8D8D8;
+text-decoration: none;
+}
+.top a:visited
+{
+color:#D8D8D8;
+text-decoration: none;
+}
+.top a:hover
+{
+color:#ccccff;
+text-decoration: none;
+}
+.top a:active
+{
+color:#D8D8D8;
+text-decoration: none;
+}
+.displaylogo
+{
+width: 850px;
+height: 415px;
+margin: 5% auto 30px auto;
+background-image:url("../images/cover.png");
+background-position: center;
+background-repeat:no-repeat;
+background-size: contain;
+}
+.wrapapp
+{
+width: 400px;
+height: 50px;
+margin: 20px auto 20px auto;
+/*background-color: silver;*/
+}
+.appleBtn
+{
+float: left;
+width:168px;
+height:50px;
+display:block;
+margin: 0px;
+background-image:url("../images/apple.png");
+background-repeat:no-repeat;
+background-size:contain;
+}
+.androidBtn
+{
+float: right;
+width:168px;
+height:50px;
+display:block;
+margin: 0px;
+background-image:url("../images/android.png");
+background-repeat:no-repeat;
+background-size:contain;
+}
+.footer
+{
+overflow: hidden;
+margin: 70px auto 30px auto;
+width: 750px;
+height: 50px;
+line-height: 50px;
+text-align: center;
+font-size: normal;
+border-radius:10px;
+background:#202020;
+color:#777;
+}
+.footer a:link
+{
+text-decoration: none;
+color:#777;
+}
+.footer a:visited
+{
+text-decoration: none;
+color:#777;
+}
+.footer a:hover
+{
+text-decoration: underline;
+color:#777;
+}
+.footer a:active
+{
+text-decoration: none;
+color:#777;
+}
+@media only screen and (max-width: 900px)
+{
+.displaylogo
+{
+width: 650px;
+height: 317px;
+}
+.footer, .content, .title, .demotitle
+{
+width: 90%;
+}
+}
+@media only screen and (max-width: 650px)
+{
+.footer
+{
+margin-top: 200px;
+font-size: 80%;
+}
+.displaylogo
+{
+width: 450px;
+height: 220px;
+}
+.wrapapp
+{
+width:168px;
+height: auto;
+}
+#appleBtn
+{
+float: clear;
+margin: 20px auto 20px auto;
+}
+.androidBtn
+{
+float: clear;
+margin: 20px auto 20px auto;
+}
+}
+@media only screen and (max-width: 450px)
+{
+.footer
+{
+font-size: 60%;
+}
+.displaylogo
+{
+width: 350px;
+height: 171px;
+}
+}
+@media only screen and (max-width: 320px)
+{
+.footer
+{
+font-size: 50%;
+}
+.displaylogo
+{
+width: 250px;
+height: 122px;
+}
+}
+@media only screen and (max-width: 300px)
+{
+.footer
+{
+margin-top: 175px;
+font-size: 40%;
+height: 30px;
+line-height: 30px;
+border-radius:5px;
+}
+}
+/*----- Toggle Button -----*/
+.toggle-nav {
+display:none;
+}
+.menu
+{
+margin-top: 10px;
+font-family: hrfont, arial, verdana, helvetica;
+font-size: 25px;
+}
+.menu a
+{
+text-decoration:none;
+} 
+/*----- Menu -----*/
+@media screen and (min-width: 651px)
+{
+.menu {
+/*float: right;*/
+margin: 10px auto 0px auto;
+width:585px;
+/*padding:10px 18px;
+box-shadow:0px 1px 1px rgba(0,0,0,0.15);*/
+border-radius:10px;
+background:#303030;
+}
+}
+
+.menu ul {
+display:inline-block;
+}
+
+.menu li {
+margin:0px 50px 0px 0px;
+float:left;
+list-style:none;
+}
+
+.menu li:last-child {
+margin-right:0px;
+}
+
+.menu a, .menu a:link {
+text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+color:#777;
+transition:color linear 0.15s;
+}
+
+.menu a:hover, .menu .current-item a {
+text-decoration:none;
+color:#ccccff;
+}
+
+/*----- Responsive -----*/
+
+@media screen and (max-width: 650px) {
+.menu-wrap
+{
+margin-top: 0px;
+overflow: visible;
+}
+.title,.demotitle
+{
+margin-top: 20px;
+}
+.menu {
+margin-top: 0px;
+font-size: 18px;
+float: right;
+position:relative;
+text-align: right;
+display:inline-block;
+}
+
+.menu ul.active {
+display:none;
+}
+
+.menu ul {
+width:100%;
+position:absolute;
+top:80%;
+right:0px;
+padding:10px 18px;
+box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+border-radius:3px;
+background:#303030;
+}
+
+.menu ul:after {
+width:0px;
+height:0px;
+position:absolute;
+top:0%;
+left:22px;
+content:'';
+transform:translate(0%, -100%);
+border-left:7px solid transparent;
+border-right:7px solid transparent;
+border-bottom:7px solid #303030;
+}
+
+.menu li {
+margin:5px 0px 0px 0px;
+float:right;
+display:block;
+}
+
+.menu a {
+display:block;
+}
+
+.toggle-nav {
+padding:20px;
+float:left;
+display:inline-block;
+box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+border-radius:3px;
+background:#303030;
+text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+color:#777;
+font-size:20px;
+transition:color linear 0.15s;
+}
+
+.toggle-nav:hover, .toggle-nav.active {
+text-decoration:none;
+color:#66a992;
+}
+}
