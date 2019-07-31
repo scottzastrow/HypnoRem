@@ -10,4 +10,3 @@ Developed With Unity 5.4.0f3<br/>
 <br/>
 Available on Google Play: https://play.google.com/store/apps/details?id=com.VERGOSOFT.HypnoRem
 <br/>
-Available on the App Store: https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1099343642
